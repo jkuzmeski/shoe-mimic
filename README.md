@@ -1,4 +1,6 @@
-# muscle-supermimic
+# Shoe Mimic
+
+Shoe Mimic is a fork of [Muscle SuperMimic](https://github.com/kaibohex/muscle-supermimic).
 
 **Whole-body motion tracking for musculoskeletal humanoids with one differentiable world model:**
 [SuperMimic](https://arxiv.org/abs/2610.28480) driving MS-Human-700 (700 muscles) and MyoFullBody (354
@@ -158,9 +160,9 @@ iteration's time piece by piece.
 ## Install
 
 ```bash
-git clone --recursive https://github.com/kaibohex/muscle-supermimic.git   # MS-Human-700 is a submodule
-cd muscle-supermimic
-uv sync           # Python 3.12; mjlab 1.6.0 (torch, MuJoCo-Warp), musclemimic-models 1.0.6
+git clone --recurse-submodules https://github.com/jkuzmeski/shoe-mimic.git
+cd shoe-mimic
+uv sync --locked  # Python 3.12; mjlab 1.6.0 (torch, MuJoCo-Warp), musclemimic-models 1.0.6
 uv run pytest     # CPU, ~1.5 min; tests/test_env.py needs the test clips (docs/motion_data.md)
 ```
 
